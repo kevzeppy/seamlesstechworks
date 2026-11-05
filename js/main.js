@@ -15,7 +15,7 @@ list.addEventListener('click', function (e) {
 // Netlify Forms: submit without leaving the page
 var form = document.getElementById('reviewForm');
 var msg = document.getElementById('formMsg');
-form.addEventListener('submit', function (e) {
+if (form) form.addEventListener('submit', function (e) {
   e.preventDefault();
   msg.textContent = 'Sending...';
   var data = new URLSearchParams(new FormData(form)).toString();
