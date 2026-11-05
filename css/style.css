@@ -270,3 +270,10 @@ footer .logo .l2 { color: var(--clay-light); }
 @media (max-width: 900px) {
   .steps, .who-grid { grid-template-columns: 1fr; }
 }
+
+/* Phone links */
+nav .nav-phone { white-space: nowrap; }
+.call-line { margin-top: 18px; font-size: 1.1rem; color: var(--muted); }
+.call-line a { color: var(--clay); font-weight: 700; text-decoration: none; white-space: nowrap; }
+.call-line a:hover { text-decoration: underline; }
+footer a { color: inherit; }
