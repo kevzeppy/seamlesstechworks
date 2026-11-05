@@ -320,3 +320,18 @@ footer .logo-chip { margin: 0; }
 .also-note { text-align: center; color: var(--muted); margin-top: 22px; }
 .also + .fine { margin-top: 32px; }
 @media (max-width: 860px) { .also-grid { grid-template-columns: 1fr; } }
+
+/* v7: light hero, dark sign block, roomier gutters */
+.wrap { padding: 0 clamp(24px, 4vw, 44px); }
+.hero { background: linear-gradient(180deg, #ffffff 0%, #eef1f8 100%); color: var(--navy); padding: 96px 0 104px; }
+.hero::before { display: none; }
+.hero h1 { color: var(--navy); }
+.hero p { color: var(--muted); }
+.hero-logo { background: none; box-shadow: none; transform: none; border-radius: 0; padding: 0; max-width: 480px; }
+.hero-logo img { filter: drop-shadow(0 18px 30px rgba(20,38,74,.18)); }
+@media (max-width: 860px) { .hero { padding: 56px 0 64px; } .hero-logo { max-width: 260px; padding: 0; } }
+.sign { background: linear-gradient(165deg, #1c3669, var(--navy) 55%, var(--navy-deep)); }
+.sign-text { color: #c9d3ea; font-weight: 400; }
+.sign-big { color: var(--white); }
+.sign-big .hl { color: var(--clay-light); }
+.sign-big .hl { white-space: nowrap; }
